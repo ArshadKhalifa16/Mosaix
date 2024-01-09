@@ -1,0 +1,135 @@
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat&display=swap');
+   * {
+   	padding: 0;
+   	margin: 0;
+   	list-style: none;
+   	text-decoration: none;
+   	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+   }
+
+
+   :root {
+	--blackcolor : rgba(0, 0, 0 , 0.5);
+	--gradientcolor : linear-gradient(90deg, #02C685 0%, #8ADF5E 100%);
+;
+
+
+   }
+
+
+   .head-container {
+	background: url('../assets/Rectangle 48.png'); 
+	background-repeat:no-repeat;
+	width: 100%;
+	height: 100vh;
+	
+   }
+
+   .flex-container {
+   	display: flex;
+   	justify-content: space-around;
+   	align-items: center;
+	padding: 1.5rem;
+	background: var(--blackcolor);
+   	
+	
+   }
+
+   .logo {
+	display: flex;
+	align-items: center;
+	
+	
+   }
+
+  
+*/
+   .navigation a {
+        font-family: 'Montserrat';
+	font-size: 14px;
+        letter-spacing: .45rem;
+	
+   }
+
+   .navigation {
+   	display: flex;
+	float: left;
+   }
+
+   .navigation a {
+   	display: block;
+   	padding: 1em;
+   	color:#fff;
+	
+	
+   }
+
+
+   .btn__1 {
+	display: block;
+	width: 140px;
+	color: #fff;	
+	background: linear-gradient(90deg, #02C685 0%, #8ADF5E 100%);
+	border: none;
+	border-radius: 8px;
+	font-size: 14px;
+
+	
+   }
+
+   /* *********** media queries *********** */
+   @media all and (max-width: 990px) {
+   	.flex-container {
+   		flex-direction: column;
+   	}
+
+   	.logo {
+   		margin: 0;
+   	}
+
+   	.navigation {
+   		width: 100%;
+   		justify-content: space-around;
+   	}
+	
+	
+	
+   }
+
+
+   /* ****** ****** */
+   @media all and (max-width: 600px) {
+
+   	.logo {
+   		margin: .25em 0;
+   		align-self: left;
+   		/* align the logo to the left side of 'flex-container' */
+   	}
+
+   	.navigation {
+   		flex-direction: column;
+   	}
+
+   	.navigation a {
+   		text-align: center;
+   		padding: 10px;
+   		border-top: 1px solid rgba(255, 255, 255, 0.3);
+   		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   	}
+
+   	.navigation li:last-of-type a {
+   		border-bottom: none;
+   	}
+	
+	
+   	.btn__1 {
+		width: 100%;
+   		justify-content: space-around;
+   		text-align: center;
+   		padding: 10px;
+   		border-top: 1px solid rgba(255, 255, 255, 0.3);
+   		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   	}
+   }
